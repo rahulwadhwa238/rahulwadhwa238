@@ -15,7 +15,7 @@
 ![Redux Saga](https://img.shields.io/badge/-Redux_Saga-999999?style=flat-square&logo=redux-saga&logoColor=white)
 ![Redux Thunk](https://img.shields.io/badge/-Redux_Thunk-999999?style=flat-square&logo=redux-thunk&logoColor=white)
 
-![iOS](https://img.shields.io/badge/-ios-%23CC6699?style=flat-square&logo=ios&logoColor=ffffff)
+![iOS](https://img.shields.io/badge/-iOS-%23CC6699?style=flat-square&logo=iOS&logoColor=ffffff)
 ![Android](https://img.shields.io/badge/-android-DB7093?style=flat-square&logo=android&logoColor=white)
 
 ![npm](https://img.shields.io/badge/-npm-%234B32C3?style=flat-square&logo=npm)
@@ -28,7 +28,7 @@
 
 ## 📫 How to reach me
 
-[![](https://img.shields.io/badge/-@parmeet_singh_codes-0A66C2?style=flat-square&logo=LinkedIn&logoColor=ffffff)](https://www.linkedin.com/in/rahul-wadhwa-452121165/)
-[![](https://img.shields.io/badge/-parmeetsasija@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=fff)](mailto:rahulwadhwa238@gmail.com)
+[![](https://img.shields.io/badge/-@rahulwadhwa238-0A66C2?style=flat-square&logo=LinkedIn&logoColor=ffffff)](https://www.linkedin.com/in/rahulwadhwa238/)
+[![](https://img.shields.io/badge/-rahulwadhwa238@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=fff)](mailto:rahulwadhwa238@gmail.com)
 <!-- [![](https://img.shields.io/website?color=0ab9e6&style=flat-square&up_message=xlbd.me&url=https%3A%2F%2Fxlbd.me)](https://xlbd.me) -->
    
