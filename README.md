@@ -8,7 +8,7 @@
 <br />
 
 ## ⚡️ Technologies
-![React Native](https://img.shields.io/badge/-ReactNative-%23282C34?style=flat-square&logo=react)
+![React Native](https://img.shields.io/badge/-ReactNative-%23282C34?style=flat-square&logo=react&color=%00FFFF)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 ![React](https://img.shields.io/badge/-React-%23282C34?style=flat-square&logo=react)
 
