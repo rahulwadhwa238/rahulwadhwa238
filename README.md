@@ -8,7 +8,7 @@
 <br />
 
 ## ⚡️ Technologies
-![React Native](https://img.shields.io/badge/-React-Native-%23282C34?style=flat-square&logo=react-native)
+![React Native](https://img.shields.io/badge/-ReactNative-%23282C34?style=flat-square&logo=react-native)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 ![React](https://img.shields.io/badge/-React-%23282C34?style=flat-square&logo=react)
 
@@ -29,6 +29,4 @@
 ## 📫 How to reach me
 
 [![](https://img.shields.io/badge/-@rahulwadhwa238-0A66C2?style=flat-square&logo=LinkedIn&logoColor=ffffff)](https://www.linkedin.com/in/rahulwadhwa238/)
-[![](https://img.shields.io/badge/-rahulwadhwa238@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=fff)](mailto:rahulwadhwa238@gmail.com)
-<!-- [![](https://img.shields.io/website?color=0ab9e6&style=flat-square&up_message=xlbd.me&url=https%3A%2F%2Fxlbd.me)](https://xlbd.me) -->
-   
+[![](https://img.shields.io/badge/-rahulwadhwa238@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=fff)](mailto:rahulwadhwa238@gmail.com) 
