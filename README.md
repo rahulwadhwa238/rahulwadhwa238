@@ -1,16 +1,20 @@
-### Hi there 👋
+Hi there 👋
+🧑🏻‍💻 My name is Parmeet Singh, I'm a Frontend Developer from India.
+🔭 I like to work on hard problems where technology can have a long-term meaningful impact.
+📩 Do you need a website? Send an email on parmeetsasija@gmail.com
 
-<!--
-**rahulwadhwa238/rahulwadhwa238** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+⚡️ Technologies
+HTML5 CSS3 JavaScript TypeScript React
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Redux Redux Saga React Router Material UI
+
+Sass Styled Components TailwindCss
+
+AWS Google Cloud Netlify
+
+Webpack ESlint Prettier
+
+
+📫 How to reach me
+   
