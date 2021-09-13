@@ -10,7 +10,6 @@
 ## ⚡️ Technologies
 ![React Native](https://img.shields.io/badge/-ReactNative-%23282C34?style=flatsquare&logo=react&color=66CCFF&logoColor=FFFFFF)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
-![React](https://img.shields.io/badge/-React-%23282C34?style=flat-square&logo=react)
 
 ![Redux Saga](https://img.shields.io/badge/-Redux_Saga-999999?style=flat-square&logo=redux-saga&logoColor=white)
 ![Redux Thunk](https://img.shields.io/badge/-Redux_Thunk-999999?style=flat-square&logo=redux-thunk&logoColor=white)
