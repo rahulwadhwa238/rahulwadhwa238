@@ -8,20 +8,23 @@
 <br />
 
 ## ⚡️ Technologies
-![React Native](https://img.shields.io/badge/-ReactNative-%23282C34?style=flatsquare&logo=react&color=66CCFF&logoColor=FFFFFF)
-![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-![Redux Saga](https://img.shields.io/badge/-Redux_Saga-999999?style=flat-square&logo=redux-saga&logoColor=white)
-![Redux Thunk](https://img.shields.io/badge/-Redux_Thunk-999999?style=flat-square&logo=redux-thunk&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-![iOS](https://img.shields.io/badge/-iOS-%23CC6699?style=flat-square&logo=iOS&logoColor=ffffff)
-![Android](https://img.shields.io/badge/-android-DB7093?style=flat-square&logo=android&logoColor=white)
+![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white)
+![Play Store](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
 ![npm](https://img.shields.io/badge/-npm-%234B32C3?style=flat-square&logo=npm)
-![yarn](https://img.shields.io/badge/-yarn-%234B32C3?style=flat-square&logo=yarn)
-
-![Material UI](https://img.shields.io/badge/-Material_UI-0081CB?style=flat-square&logo=material-ui&logoColor=white)
-![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=111)
+![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 
 <br />
 
