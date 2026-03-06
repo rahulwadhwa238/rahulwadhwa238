@@ -1,95 +1,94 @@
-# Rahul Wadhwa
+# Hi, I'm Rahul Wadhwa 👋
 
-**Location:** Faridabad, Haryana 121002  
-**Phone:** +91-9953806038  
-**Email:** rahulwadhwa238@gmail.com  
-**LinkedIn:** https://linkedin.com/in/rahulwadhwa238  
+Senior Full Stack Engineer with 6+ years of experience building scalable web and mobile applications using **React, React Native, Java, and Spring Boot**.
 
----
+I specialize in **microservices architecture, fintech platforms, and cloud-native systems**, building reliable and secure applications serving thousands of users.
 
-## SUMMARY
-
-Dynamic software developer with over 6 years of proven track record specializing in React.js and Spring Boot. Successfully enhancing features and boosting application performance by 12%. Adept at building enterprise-level secure software services and mentoring teams, combining technical expertise with strong leadership skills to drive impactful solutions.
+📍 Faridabad, India  
+📫 rahulwadhwa238@gmail.com  
+🔗 https://linkedin.com/in/rahulwadhwa238  
 
 ---
 
-## EXPERIENCE
+# Tech Stack
 
-### Consultant - Technology Consulting  
-**Ernst & Young (EY), Gurugram, India**  
-*Dec 2022 – Present*
+### Frontend
+React.js  
+Next.js  
+React Native  
+Redux  
+JavaScript  
+TypeScript  
 
-- Designed and implemented web-based solutions using React.js and Spring Boot microservices for digital banking features.
-- Built secure transaction systems ensuring ACID compliance for 30,000+ daily users.
-- Integrated biometric authentication modules, increasing onboarding efficiency by 12%.
-- Implemented role-based authentication and API security using Kong API Gateway and Spring Security.
+### Backend
+Java  
+Spring Boot  
+Spring Security  
+JPA / Hibernate  
+Microservices Architecture  
 
----
+### Cloud & DevOps
+AWS  
+Docker  
+Jenkins  
+CI/CD Pipelines  
 
-### Software Engineer  
-**TechAhead Corp, Noida, India**  
-*Mar 2021 – Nov 2022*
+### Infrastructure
+Kong API Gateway  
+Nginx  
+Kafka  
 
-- Developed 5+ React applications integrating 100+ APIs and NPM libraries.
-- Improved UI performance and maintained scalable infrastructure.
-- Implemented CI/CD pipelines and managed store releases while mentoring junior engineers.
-
----
-
-### Software Engineer  
-**Grazitti Interactive, Panchkula, India**  
-*Jan 2020 – Feb 2021*
-
-- Developed responsive web and mobile applications using React and JavaScript.
-- Enhanced UI performance and stability using monitoring tools (Mixpanel, Kibana).
-- Collaborated with cross-functional teams to define project requirements.
-
----
-
-## PROJECTS
-
-### Airtel Payments Bank – Digital Banking Platform
-- Designed scalable solutions supporting SBA, Passbook, Re-KYC workflows.
-- Implemented secure transaction management and high-volume financial operations.
-
-### HANY – On-Demand Service Platform
-- Built a real-time service booking platform with secure authentication.
-- Implemented live location tracking, booking workflows, and chat functionality.
-
-### Aquatherm FieldPro – Field Operations & Offline Sync Platform
-- Developed offline-first mobile application with asynchronous local database storage.
-- Integrated background synchronization and push notifications.
-
-### CatchAll – Business Recommendation Platform
-- Built real-time interactive UI with chat and maps integration using React Native.
+### Databases
+MySQL  
+MongoDB  
 
 ---
 
-## SKILLS
+# Engineering Focus
 
-- Java
-- Spring Boot
-- JPA / Hibernate
-- Microservices
-- JavaScript / TypeScript
-- React.js / Next.js
-- React Native
-- Redux
-- MySQL
-- Docker
-- AWS
-- Jenkins
-- CI/CD
-- Git
-- Kafka
-- Kong API Gateway
-- Nginx
+• Scalable Microservices Architecture  
+• Distributed Systems  
+• Secure Financial Platforms  
+• API Gateway Design  
+• High Availability Backend Systems  
+• Performance Optimization  
 
 ---
 
-## EDUCATION
+# Professional Experience Highlights
 
-**Bachelor of Technology (B.Tech)**  
-Computer Science and Engineering  
-Lingaya's Vidyapeeth, Faridabad, India  
-GPA: 8.5 / 10
+### Digital Banking Platform
+Built fintech banking modules using **React and Spring Boot microservices** supporting **30K+ daily users**.
+
+### Secure API Gateway Architecture
+Implemented API security and routing using **Kong API Gateway and Nginx**.
+
+### Mobile & Web Platforms
+Developed scalable **React and React Native applications** with real-time features and high performance.
+
+---
+
+# Featured Projects
+
+### Digital Banking Platform
+Fintech banking platform supporting account services, passbook workflows, and customer onboarding.
+
+### Offline Field Operations Platform
+Mobile application enabling engineers to work offline with asynchronous data synchronization.
+
+### Real-Time Service Marketplace
+Platform enabling real-time service booking and tracking with scalable backend infrastructure.
+
+---
+
+# GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rahulwadhwa238&show_icons=true)
+
+---
+
+# Open to Opportunities
+
+I'm currently open to **Senior Full Stack Engineer** opportunities working on scalable systems, cloud platforms, and high-impact products.
+
+Let's connect!

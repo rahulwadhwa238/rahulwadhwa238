@@ -4,98 +4,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Rahul Wadhwa Resume</title>
 
   <style>
     body {
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      background: white;
+      color: #111;
     }
 
     .container {
-      width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 850px;
+      margin: auto;
+      padding: 28px;
     }
 
-    .header {
-      background-color: #1f3c88;
-      color: white;
-      text-align: center;
-      padding: 25px 10px;
+    .container h2 {
+      font-size: 18px;
+      margin-top: 4px;
+      margin-bottom: 4px;
     }
 
-    .header h1 {
-      margin: 0;
-      letter-spacing: 2px;
+    h1 {
+      font-size: 24px;
+      margin-top: 4px;
+      margin-bottom: 4px;
     }
 
     .contact {
-      background-color: #e9eef7;
-      text-align: center;
-      padding: 8px;
-      font-size: 14px;
-      border-bottom: 2px solid #1f3c88;
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 14px;
     }
 
-    .main {
+    .section {
+      margin-top: 18px;
+    }
+
+    .section h2 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job-header {
       display: flex;
-    }
-
-    .left {
-      width: 65%;
-      padding: 0 25px;
-      border-right: 2px solid #1f3c88;
-    }
-
-    .right {
-      width: 35%;
-      padding: 0 25px;
-      background-color: #f9fbff;
-    }
-
-    h2 {
-      color: #1f3c88;
-      border-bottom: 2px solid #1f3c88;
-      padding-bottom: 5px;
-      margin-top: 20px;
-    }
-
-    h3 {
-      margin: 10px 0 5px 0;
-    }
-
-    p {
+      justify-content: space-between;
       font-size: 14px;
-      line-height: 1.6;
-      margin: 5px 0;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin-top: 5px;
-    }
-
-    li {
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .job-title {
       font-weight: bold;
     }
 
     .company {
-      font-weight: 600;
+      font-weight: normal;
+      color: #444;
     }
 
-    .date {
-      float: right;
-      font-weight: normal;
+    ul {
+      margin: 4px 0;
+      padding-left: 18px;
+    }
+
+    li {
       font-size: 13px;
-      color: #555;
+      line-height: 1.5;
+      margin-bottom: 3px;
+    }
+
+    .skills {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .project {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
     }
   </style>
 </head>
@@ -104,110 +99,192 @@
 
   <div class="container">
 
-    <div class="header">
-      <h1>Rahul Wadhwa</h1>
-    </div>
+    <h1>Rahul Wadhwa</h1>
+    <h2>Senior Full Stack Engineer | React | Spring Boot | Microservices</h2>
 
     <div class="contact">
-      Faridabad, Haryana 121002 |
-      +91-9953806038 |
-      rahulwadhwa238@gmail.com |
-      linkedin.com/in/rahulwadhwa238
+      Faridabad, Haryana | +91-9953806038 | rahulwadhwa238@gmail.com | linkedin.com/in/rahulwadhwa238
     </div>
 
-    <div class="main">
+    <div class="section">
 
-      <div class="left">
+      <h2>SUMMARY</h2>
 
-        <h2>SUMMARY</h2>
-        <p>
-          Dynamic software developer with over 6 years of proven track record
-          specializing in React.js and Spring Boot. Successfully enhancing features,
-          boosting application's performance by 12%. Adept at building enterprise-level
-          secure software services and mentoring teams, combining technical expertise
-          with strong leadership skills to drive impactful solutions.
-        </p>
+      <p style="font-size:13px;line-height:1.6;">
+        Senior Full Stack Engineer with 6+ years of experience building scalable enterprise-level
+        web and mobile applications using React.js, React Native, Java and Spring Boot.
+        Experienced in fintech platforms and microservices architectures supporting
+        30K+ daily users. Skilled in AWS, Docker, CI/CD pipelines, and API gateway
+        infrastructure using Kong and Nginx.
+      </p>
 
-        <h2>EXPERIENCE</h2>
+    </div>
 
-        <h3>
-          <span class="job-title">Consultant - Technology Consulting</span>
-          <span class="date">12/2022 - Present</span>
-        </h3>
-        <p class="company">Ernst & Young (EY) – Gurugram, India</p>
+    <div class="section">
+
+      <h2>SKILLS</h2>
+
+      <div class="skills">
+
+        <strong>Frontend:</strong>
+        React.js, Next.js, React Native, Redux, JavaScript, TypeScript
+
+        <br>
+
+        <strong>Backend:</strong>
+        Java, Spring Boot, JPA, Hibernate, Microservices
+
+        <br>
+
+        <strong>Databases:</strong>
+        MySQL, Oracle SQL
+
+        <br>
+
+        <strong>Cloud & DevOps:</strong>
+        AWS, Docker, Jenkins, CI/CD
+
+        <br>
+
+        <strong>Infrastructure:</strong>
+        Kong API Gateway, Nginx, Kafka
+
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>EXPERIENCE</h2>
+
+      <div class="job">
+
+        <div class="job-header">
+          Consultant – Technology Consulting
+          <span>Dec 2022 – Present</span>
+        </div>
+
+        <div class="company">
+          Ernst & Young (EY), Gurugram
+        </div>
+
         <ul>
-          <li>Designed and implemented web-based solutions with React.js and Spring Boot microservices for digital
-            banking features.</li>
-          <li>Built secure transaction systems ensuring ACID compliance for 30,000+ daily users.</li>
-          <li>Integrated biometric authentication modules, increasing onboarding efficiency by 12%.</li>
-          <li>Implemented role-based authentication and API security using KONG and Spring Security.</li>
-        </ul>
 
-        <h3>
-          <span class="job-title">Software Engineer</span>
-          <span class="date">03/2021 - 11/2022</span>
-        </h3>
-        <p class="company">TechAhead Corp – Noida, India</p>
-        <ul>
-          <li>Developed 5+ React apps integrating 100+ APIs and NPM libraries.</li>
-          <li>Improved UI performance and maintained scalability infrastructure.</li>
-          <li>Implemented CI/CD pipelines and mentored junior engineers.</li>
-        </ul>
+          <li>
+            Developed secure digital banking modules using React.js and Spring Boot microservices supporting 30K+ daily
+            active users.
+          </li>
 
-        <h3>
-          <span class="job-title">Software Engineer</span>
-          <span class="date">01/2020 - 02/2021</span>
-        </h3>
-        <p class="company">Grazitti Interactive – Panchkula, India</p>
-        <ul>
-          <li>Developed responsive web and mobile apps using React and JavaScript.</li>
-          <li>Improved UI performance using monitoring tools (Mixpanel, Kibana).</li>
-          <li>Collaborated with cross-functional teams for project delivery.</li>
-        </ul>
+          <li>
+            Integrated face & biometric authentication improving onboarding efficiency by 12%.
+          </li>
 
-        <h2>PROJECTS</h2>
-        <ul>
-          <li><strong>Airtel Payments Bank:</strong> Digital banking platform supporting SBA, Passbook, Re-KYC
-            workflows.</li>
-          <li><strong>HANY:</strong> On-demand service platform with household services booking and live tracking.</li>
-          <li><strong>Aquatherm FieldPro:</strong> Offline-first mobile app with async timers and push notifications.</li>
-          <li><strong>CatchAll:</strong> Business recommendation platform built with React Native over Google places and maps.</li>
+          <li>
+            Implemented API gateway security using Kong, Nginx, and Spring Security, improving platform security and
+            increasing
+            onboarding conversion by 5%.
+          </li>
+
         </ul>
 
       </div>
 
-      <div class="right">
+      <div class="job">
 
-        <h2>SKILLS</h2>
+        <div class="job-header">
+          Software Engineer
+          <span>Mar 2021 – Nov 2022</span>
+        </div>
+
+        <div class="company">
+          TechAhead Corp, Noida
+        </div>
+
         <ul>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>JPA / Hibernate</li>
-          <li>Microservices</li>
-          <li>JavaScript / TypeScript</li>
-          <li>React.js / Next.js</li>
-          <li>React Native</li>
-          <li>Redux</li>
-          <li>MySQL</li>
-          <li>Docker</li>
-          <li>AWS</li>
-          <li>Jenkins</li>
-          <li>CI/CD</li>
-          <li>Git</li>
-          <li>Kafka</li>
-          <li>Kong API Gateway</li>
-          <li>Nginx</li>
+
+          <li>
+            Developed 5+ production React applications integrating 100+ REST APIs and modern frontend libraries
+            including Redux,
+            Axios, Tailwind, and Firebase.
+          </li>
+
+          <li>
+            Improved UI performance through optimized component architecture.
+          </li>
+
+          <li>
+            Mentored junior developers and conducted code reviews to improve code quality, maintainability, and team
+            collaboration.
+          </li>
+
         </ul>
 
-        <h2>EDUCATION</h2>
-        <p>
-          <strong>Bachelor of Technology</strong><br>
-          Computer Science and Engineering<br>
-          Lingaya's Vidyapeeth – Faridabad, India<br>
-          GPA: 8.5/10
-        </p>
+      </div>
+
+      <div class="job">
+
+        <div class="job-header">
+          Software Engineer
+          <span>Jan 2020 – Feb 2021</span>
+        </div>
+
+        <div class="company">
+          Grazitti Interactive, Panchkula
+        </div>
+
+        <ul>
+
+          <li>
+            Developed responsive web and mobile applications using React and JavaScript.
+          </li>
+
+          <li>
+            Improved application performance using Mixpanel and Kibana analytics.
+          </li>
+
+          <li>
+            Worked with cross-functional teams to deliver enterprise software projects.
+          </li>
+
+        </ul>
 
       </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>PROJECTS</h2>
+
+      <div class="project">
+        <strong>Airtel Payments Bank</strong> – Digital banking platform supporting SBA accounts, passbook services and Re-KYC workflows built
+        using React and Spring Boot microservices.
+      </div>
+
+      <div class="project">
+        <strong>HANY</strong> – On-demand service platform with real-time booking, payments and tracking.
+      </div>
+
+      <div class="project">
+        <strong>Aquatherm FieldPro</strong> – Offline-first mobile application with async timers
+        and push notifications for technicians.
+      </div>
+
+      <div class="project">
+        <strong>CatchAll</strong> – React Native app providing social recommendations using
+        Google Places API.
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>EDUCATION</h2>
+
+      <p style="font-size:13px;">
+        <strong>Bachelor of Technology – Computer Science</strong><br>
+        Lingaya's Vidyapeeth, Faridabad • GPA: 8.5 / 10
+      </p>
 
     </div>
 
