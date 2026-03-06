@@ -81,12 +81,6 @@ Platform enabling real-time service booking and tracking with scalable backend i
 
 ---
 
-# GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rahulwadhwa238&show_icons=true)
-
----
-
 # Open to Opportunities
 
 I'm currently open to **Senior Full Stack Engineer** opportunities working on scalable systems, cloud platforms, and high-impact products.
