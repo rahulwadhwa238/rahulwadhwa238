@@ -2,7 +2,7 @@
 
 Senior Full Stack Engineer with 6+ years of experience building scalable web and mobile applications using **React, React Native, Java, and Spring Boot**.
 
-I specialize in **microservices architecture, fintech platforms, and cloud-native systems**, building reliable and secure applications serving thousands of users.
+I specialize in **distributed system, microservices architecture, fintech platforms, and cloud-native systems**, building reliable and secure applications serving thousands of users.
 
 📍 Faridabad, India  
 📫 rahulwadhwa238@gmail.com  
