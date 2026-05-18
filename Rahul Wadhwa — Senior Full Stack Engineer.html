@@ -218,17 +218,22 @@
     }
 
     .tag {
+      display: inline-block;
       font-size: var(--fs-md);
       background: #f4f4f2;
       color: #333;
+      border: 1px solid transparent;
       border-radius: 3px;
       padding: 1px 6px;
       line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
     .tag.accent {
       background: #f0f6ff;
       color: #1a5fb4;
+      border-color: #c8dff1;
     }
 
     .edu-name {
@@ -295,6 +300,14 @@
     @media print {
       body {
         background: #fff;
+      }
+
+      .tag,
+      .tag.accent {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        border-color: #999;
+        background-clip: padding-box;
       }
 
       .page {
