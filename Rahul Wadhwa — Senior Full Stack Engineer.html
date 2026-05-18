@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Wadhwa — Senior Full Stack Engineer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8e8e8;
+      color: #1a1a1a;
+      font-size: 11.5px;
+      line-height: 1.45;
+    }
+
+    /* A4 = 210mm x 297mm -> at 96dpi ~ 794px x 1123px */
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      max-height: 1123px;
+      overflow: hidden;
+      margin: 24px auto;
+      padding: 28px 32px 24px;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+    }
+
+    .header {
+      border-bottom: 1.5px solid #1a1a1a;
+      padding-bottom: 9px;
+      margin-bottom: 12px;
+    }
+
+    .header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: #0d0d0d;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+
+    .header .title-tag {
+      font-size: 11px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      font-size: 10.5px;
+      color: #444;
+    }
+
+    .contact-row span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-row a {
+      color: #1a5fb4;
+      text-decoration: none;
+    }
+
+    .dot {
+      width: 2.5px;
+      height: 2.5px;
+      border-radius: 50%;
+      background: #999;
+      display: inline-block;
+    }
+
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 186px;
+      gap: 20px;
+    }
+
+    section {
+      margin-bottom: 13px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    .sec-title {
+      font-size: 8.5px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #888;
+      border-bottom: 0.5px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    .summary p {
+      font-size: 11px;
+      line-height: 1.55;
+      color: #2a2a2a;
+    }
+
+    .job {
+      margin-bottom: 11px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .job-title {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .job-date {
+      font-size: 10px;
+      color: #888;
+      white-space: nowrap;
+      margin-left: 6px;
+      padding-top: 1px;
+    }
+
+    .job-company {
+      font-size: 10.5px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 500;
+      background: #eef3fb;
+      color: #1a5fb4;
+      border-radius: 3px;
+      padding: 0px 5px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    ul.bullets {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.bullets li {
+      font-size: 11px;
+      line-height: 1.45;
+      color: #2a2a2a;
+      padding-left: 11px;
+      position: relative;
+      margin-bottom: 2.5px;
+    }
+
+    ul.bullets li::before {
+      content: '\25B8';
+      position: absolute;
+      left: 0;
+      color: #bbb;
+      font-size: 9px;
+      top: 1px;
+    }
+
+    .m {
+      font-weight: 600;
+      color: #0d0d0d;
+    }
+
+    .skill-group {
+      margin-bottom: 9px;
+    }
+
+    .skill-label {
+      font-size: 8.5px;
+      font-weight: 600;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 4px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .tag {
+      font-size: 10px;
+      background: #f4f4f2;
+      color: #333;
+      border-radius: 3px;
+      padding: 1px 6px;
+      line-height: 1.5;
+    }
+
+    .tag.accent {
+      background: #f0f6ff;
+      color: #1a5fb4;
+    }
+
+    .edu-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 1px;
+    }
+
+    .edu-sub {
+      font-size: 10.5px;
+      color: #555;
+      margin-bottom: 3px;
+    }
+
+    .edu-gpa {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      background: #f0faf4;
+      color: #1b7a45;
+      border-radius: 3px;
+      padding: 1px 6px;
+    }
+
+    .project {
+      margin-bottom: 7px;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .proj-name {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 1px;
+    }
+
+    .proj-desc {
+      font-size: 10px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .cert-item {
+      font-size: 10.5px;
+      color: #444;
+      margin-bottom: 3px;
+      padding-left: 10px;
+      position: relative;
+    }
+
+    .cert-item::before {
+      content: '\25B8';
+      position: absolute;
+      left: 0;
+      color: #ccc;
+      font-size: 8px;
+      top: 2px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        max-height: 297mm;
+        margin: 0;
+        padding: 12mm 13mm 10mm;
+        box-shadow: none;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="header">
+      <h1>Rahul Wadhwa</h1>
+      <div class="title-tag">Senior Full Stack Engineer &nbsp;&middot;&nbsp; React &middot; Spring Boot &middot;
+        Microservices &middot; AWS</div>
+      <div class="contact-row">
+        <span>Faridabad, Haryana</span>
+        <span class="dot"></span>
+        <span>+91-99538-06038</span>
+        <span class="dot"></span>
+        <span><a href="mailto:rahulwadhwa238@gmail.com">rahulwadhwa238@gmail.com</a></span>
+        <span class="dot"></span>
+        <span><a href="https://linkedin.com/in/rahulwadhwa238">linkedin.com/in/rahulwadhwa238</a></span>
+        <span class="dot"></span>
+        <span><a href="https://github.com/rahulwadhwa238">github.com/rahulwadhwa238</a></span>
+        <span><a href="https://www.hackerrank.com/profile/rahulwadhwa238">hackerrank.com/rahulwadhwa238</a></span>
+      </div>
+    </div>
+
+    <div class="body">
+
+      <div class="main">
+
+        <section class="summary">
+          <div class="sec-title">Profile</div>
+          <p>Senior Full Stack Engineer with <strong>6+ years</strong> in delivering scalable enterprise software and
+            platforms using <strong>React.js, Java, and Spring Boot microservices</strong>. Led end-to-end delivery of
+            digital banking modules at EY serving <strong>30K+ daily users</strong>, with ownership across API gateway
+            security, biometric authentication, and CI/CD pipelines. Proven track record improving onboarding
+            conversion, compressing release cycles, and mentoring engineering teams.</p>
+        </section>
+
+        <section>
+          <div class="sec-title">Experience</div>
+
+          <div class="job">
+            <div class="job-top">
+              <div class="job-title">Consultant – Technology Consulting</div>
+              <div class="job-date">Dec 2022 – Present</div>
+            </div>
+            <div class="job-company">Ernst &amp; Young (EY), Gurugram <span class="badge">Fintech &middot;
+                Enterprise</span></div>
+            <ul class="bullets">
+              <li>Engineered <span class="m">3 core digital banking modules</span> (Savings account, Transaction, Passbook)
+                with React.js + Spring Boot microservices, serving <span class="m">30K+ daily active users</span> at
+                99.9% uptime.</li>
+              <li>Integrated face &amp; biometric authentication, reducing onboarding drop-off by <span
+                  class="m">12%</span> and manual KYC time by <span class="m">~40%</span>.</li>
+              <li>Hardened API gateway with <strong>Kong, Nginx &amp; Spring Security</strong> (JWT + OAuth 2.0) —
+                boosted conversion by <span class="m">5%</span>, zero post-deployment security incidents.</li>
+              <li>Leveraged AI-assisted development tools (including <strong>Amazon Q, OpenAI Codex</strong>) for PR reviews, test case generation, code analysis increasing
+              development efficiency by <span class="m">30%</span> and cutting post-release bug by <span class="m">25%</span>.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-top">
+              <div class="job-title">Software Engineer</div>
+              <div class="job-date">Mar 2021 – Nov 2022</div>
+            </div>
+            <div class="job-company">TechAhead Corp, Noida <span class="badge">Product &middot; Services</span></div>
+            <ul class="bullets">
+              <li>Shipped <span class="m">5 production React applications</span> integrating <span class="m">100+ REST
+                  APIs</span> with Redux, Axios, Firebase, and Tailwind CSS.</li>
+              <li>Refactored component architecture with React.memo, lazy loading &amp; code-splitting — page load <span
+                  class="m">down 35%</span>, Lighthouse score 62 &rarr; <span class="m">89</span>.</li>
+              <li>Led weekly code reviews for a 6-person team; linting standards and PR checklists cut cycle time by
+                <span class="m">20%</span>.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-top">
+              <div class="job-title">Software Engineer</div>
+              <div class="job-date">Jan 2020 – Feb 2021</div>
+            </div>
+            <div class="job-company">Grazitti Interactive, Panchkula <span class="badge">SaaS &middot; Enterprise</span>
+            </div>
+            <ul class="bullets">
+              <li>Delivered responsive web &amp; React Native features across <span class="m">4 major releases</span> on
+                schedule for enterprise SaaS clients.</li>
+              <li>Used Mixpanel &amp; Kibana to surface UX bottlenecks — drove 3 product fixes, reduced support ticket
+                volume by <span class="m">22%</span>.</li>
+            </ul>
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="sidebar">
+
+        <section>
+          <div class="sec-title">Skills</div>
+
+          <div class="skill-group">
+            <div class="skill-label">Frontend</div>
+            <div class="skill-tags">
+              <span class="tag accent">React.js</span>
+              <span class="tag accent">Next.js</span>
+              <span class="tag accent">React Native</span>
+              <span class="tag">Redux</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Backend</div>
+            <div class="skill-tags">
+              <span class="tag accent">Spring Boot</span>
+              <span class="tag accent">Java</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">JPA / Hibernate</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Cloud &amp; DevOps</div>
+            <div class="skill-tags">
+              <span class="tag accent">AWS</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Kong</span>
+              <span class="tag">Nginx</span>
+              <span class="tag">Kafka</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Databases</div>
+            <div class="skill-tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">Oracle SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">AI &amp; Tooling</div>
+            <div class="skill-tags">
+              <span class="tag">Amazon Q</span>
+              <span class="tag">Codex</span>
+              <span class="tag">Prompt Eng.</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="sec-title">Education</div>
+          <div class="edu-name">B.Tech — Computer Science</div>
+          <div class="edu-sub">Lingaya's Vidyapeeth, Faridabad<br>2015 – 2019</div>
+          <span class="edu-gpa">GPA 8.5 / 10</span>
+        </section>
+
+        <section>
+          <div class="sec-title">Key Projects</div>
+
+          <div class="project">
+            <div class="proj-name">Airtel Payments Bank</div>
+            <div class="proj-desc">Digital banking — SBA, passbook &amp; Re-KYC. React + Spring Boot. 30K+ DAU.</div>
+          </div>
+
+          <div class="project">
+            <div class="proj-name">HANY</div>
+            <div class="proj-desc">On-demand platform — real-time booking, payments &amp; tracking.</div>
+          </div>
+
+          <div class="project">
+            <div class="proj-name">Aquatherm FieldPro</div>
+            <div class="proj-desc">Offline-first React Native app; async timers &amp; push notifications.</div>
+          </div>
+
+          <div class="project">
+            <div class="proj-name">CatchAll</div>
+            <div class="proj-desc">Social discovery — React Native + Google Places API.</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
