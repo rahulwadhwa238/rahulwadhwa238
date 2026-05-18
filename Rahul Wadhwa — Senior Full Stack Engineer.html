@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rahul Wadhwa — Senior Full Stack Engineer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+    :root {
+      --fs-xl: 26px;
+      --fs-lg: 16px;
+      --fs-md: 12px;
+      --fs-sm: 10px;
+    }
 
     *,
     *::before,
@@ -20,7 +27,7 @@
       font-family: 'DM Sans', sans-serif;
       background: #e8e8e8;
       color: #1a1a1a;
-      font-size: 11.5px;
+      font-size: var(--fs-md);
       line-height: 1.45;
     }
 
@@ -43,8 +50,8 @@
     }
 
     .header h1 {
-      font-family: 'EB Garamond', serif;
-      font-size: 26px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: var(--fs-xl);
       font-weight: 600;
       letter-spacing: -0.3px;
       color: #0d0d0d;
@@ -53,7 +60,7 @@
     }
 
     .header .title-tag {
-      font-size: 11px;
+      font-size: var(--fs-lg);
       font-weight: 500;
       color: #555;
       margin-bottom: 6px;
@@ -63,7 +70,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 4px 14px;
-      font-size: 10.5px;
+      font-size: var(--fs-sm);
       color: #444;
     }
 
@@ -101,7 +108,7 @@
     }
 
     .sec-title {
-      font-size: 8.5px;
+      font-size: var(--fs-lg);
       font-weight: 600;
       letter-spacing: 1.6px;
       text-transform: uppercase;
@@ -112,7 +119,7 @@
     }
 
     .summary p {
-      font-size: 11px;
+      font-size: var(--fs-md);
       line-height: 1.55;
       color: #2a2a2a;
     }
@@ -132,13 +139,13 @@
     }
 
     .job-title {
-      font-size: 11.5px;
+      font-size: var(--fs-lg);
       font-weight: 600;
       color: #111;
     }
 
     .job-date {
-      font-size: 10px;
+      font-size: var(--fs-sm);
       color: #888;
       white-space: nowrap;
       margin-left: 6px;
@@ -146,14 +153,14 @@
     }
 
     .job-company {
-      font-size: 10.5px;
+      font-size: var(--fs-md);
       color: #555;
       margin-bottom: 4px;
     }
 
     .badge {
       display: inline-block;
-      font-size: 9px;
+      font-size: var(--fs-sm);
       font-weight: 500;
       background: #eef3fb;
       color: #1a5fb4;
@@ -169,7 +176,7 @@
     }
 
     ul.bullets li {
-      font-size: 11px;
+      font-size: var(--fs-md);
       line-height: 1.45;
       color: #2a2a2a;
       padding-left: 11px;
@@ -196,7 +203,7 @@
     }
 
     .skill-label {
-      font-size: 8.5px;
+      font-size: var(--fs-sm);
       font-weight: 600;
       letter-spacing: 0.9px;
       text-transform: uppercase;
@@ -211,7 +218,7 @@
     }
 
     .tag {
-      font-size: 10px;
+      font-size: var(--fs-md);
       background: #f4f4f2;
       color: #333;
       border-radius: 3px;
@@ -225,21 +232,21 @@
     }
 
     .edu-name {
-      font-size: 11px;
+      font-size: var(--fs-lg);
       font-weight: 600;
       color: #111;
       margin-bottom: 1px;
     }
 
     .edu-sub {
-      font-size: 10.5px;
+      font-size: var(--fs-md);
       color: #555;
       margin-bottom: 3px;
     }
 
     .edu-gpa {
       display: inline-block;
-      font-size: 10px;
+      font-size: var(--fs-sm);
       font-weight: 600;
       background: #f0faf4;
       color: #1b7a45;
@@ -256,20 +263,20 @@
     }
 
     .proj-name {
-      font-size: 10.5px;
+      font-size: var(--fs-lg);
       font-weight: 600;
       color: #111;
       margin-bottom: 1px;
     }
 
     .proj-desc {
-      font-size: 10px;
+      font-size: var(--fs-md);
       color: #555;
       line-height: 1.4;
     }
 
     .cert-item {
-      font-size: 10.5px;
+      font-size: var(--fs-md);
       color: #444;
       margin-bottom: 3px;
       padding-left: 10px;
@@ -324,7 +331,6 @@
         <span><a href="https://linkedin.com/in/rahulwadhwa238">linkedin.com/in/rahulwadhwa238</a></span>
         <span class="dot"></span>
         <span><a href="https://github.com/rahulwadhwa238">github.com/rahulwadhwa238</a></span>
-        <span><a href="https://www.hackerrank.com/profile/rahulwadhwa238">hackerrank.com/rahulwadhwa238</a></span>
       </div>
     </div>
 
@@ -397,6 +403,13 @@
 
         </section>
 
+        <section>
+          <div class="sec-title">Education</div>
+          <div class="edu-name">B.Tech — Computer Science</div>
+          <div class="edu-sub">Lingaya's Vidyapeeth, Faridabad<br>2016 – 2020</div>
+          <span class="edu-gpa">GPA 8.5 / 10</span>
+        </section>
+
       </div>
 
       <div class="sidebar">
@@ -410,10 +423,10 @@
               <span class="tag accent">React.js</span>
               <span class="tag accent">Next.js</span>
               <span class="tag accent">React Native</span>
-              <span class="tag">Redux</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Tailwind</span>
+              <span class="tag accent">Redux</span>
+              <span class="tag accent">TypeScript</span>
+              <span class="tag accent">JavaScript</span>
+              <span class="tag accent">Tailwind</span>
             </div>
           </div>
 
@@ -422,9 +435,9 @@
             <div class="skill-tags">
               <span class="tag accent">Spring Boot</span>
               <span class="tag accent">Java</span>
-              <span class="tag">Microservices</span>
-              <span class="tag">JPA / Hibernate</span>
-              <span class="tag">REST APIs</span>
+              <span class="tag accent">Microservices</span>
+              <span class="tag accent">JPA / Hibernate</span>
+              <span class="tag accent">REST APIs</span>
             </div>
           </div>
 
@@ -432,38 +445,31 @@
             <div class="skill-label">Cloud &amp; DevOps</div>
             <div class="skill-tags">
               <span class="tag accent">AWS</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">CI/CD</span>
-              <span class="tag">Kong</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">Kafka</span>
+              <span class="tag accent">Docker</span>
+              <span class="tag accent">Jenkins</span>
+              <span class="tag accent">CI/CD</span>
+              <span class="tag accent">Kong</span>
+              <span class="tag accent">Nginx</span>
+              <span class="tag accent">Kafka</span>
             </div>
           </div>
 
           <div class="skill-group">
             <div class="skill-label">Databases</div>
             <div class="skill-tags">
-              <span class="tag">MySQL</span>
-              <span class="tag">Oracle SQL</span>
+              <span class="tag accent">MySQL</span>
+              <span class="tag accent">Oracle SQL</span>
             </div>
           </div>
 
           <div class="skill-group">
             <div class="skill-label">AI &amp; Tooling</div>
             <div class="skill-tags">
-              <span class="tag">Amazon Q</span>
-              <span class="tag">Codex</span>
-              <span class="tag">Prompt Eng.</span>
+              <span class="tag accent">Amazon Q</span>
+              <span class="tag accent">Codex</span>
+              <span class="tag accent">Prompt Eng.</span>
             </div>
           </div>
-        </section>
-
-        <section>
-          <div class="sec-title">Education</div>
-          <div class="edu-name">B.Tech — Computer Science</div>
-          <div class="edu-sub">Lingaya's Vidyapeeth, Faridabad<br>2015 – 2019</div>
-          <span class="edu-gpa">GPA 8.5 / 10</span>
         </section>
 
         <section>
