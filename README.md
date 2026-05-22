@@ -64,7 +64,8 @@ AWS · Docker · Jenkins · CI/CD · Kong · Nginx · Kafka
 MySQL · Oracle SQL
 
 ### AI & Tooling
-Amazon Q · Codex · Prompt Engineering
+Rag & MCP Setup with Model Integration
+Agentic and Prompt Eng. with Open AI, Github Copilot etc.
 
 ---
 
