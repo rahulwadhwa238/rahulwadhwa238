@@ -1,477 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Wadhwa — Senior Full Stack Engineer specializing in React, Java, Spring Boot, cloud deployments, and LLM/RAG integrations.">
   <title>Rahul Wadhwa — Senior Full Stack Engineer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
     :root {
       --fs-xl: 26px;
-      --fs-lg: 16px;
-      --fs-md: 12px;
+      --fs-lg: 15px;
+      --fs-md: 11px;
+      --ink: #1a1a1a;
+      --muted: #555;
+      --line: #ddd;
+      --blue: #1a5fb4;
     }
 
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
-      font-family: 'DM Sans', sans-serif;
+      margin: 0;
+      font-family: "DM Sans", Arial, sans-serif;
       background: #e8e8e8;
-      color: #1a1a1a;
+      color: var(--ink);
       font-size: var(--fs-md);
       line-height: 1.45;
     }
-
-    /* A4 = 210mm x 297mm -> at 96dpi ~ 794px x 1123px */
     .page {
-      width: 794px;
-      min-height: 1123px;
-      max-height: 1123px;
-      overflow: hidden;
+      width: min(100%, 794px);
+      min-height: 0;
       margin: 24px auto;
       padding: 28px 32px 24px;
       background: #fff;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .13);
     }
-
     .header {
-      border-bottom: 1.5px solid #1a1a1a;
+      border-bottom: 1.5px solid var(--ink);
       padding-bottom: 9px;
       margin-bottom: 16px;
     }
-
     .header h1 {
-      font-family: 'DM Sans', sans-serif;
+      margin: 0 0 2px;
       font-size: var(--fs-xl);
-      font-weight: 600;
-      letter-spacing: -0.3px;
-      color: #0d0d0d;
+      font-weight: 700;
+      letter-spacing: -.3px;
       line-height: 1.1;
-      margin-bottom: 2px;
+      color: #0d0d0d;
     }
-
-    .header .title-tag {
+    .title-tag {
+      margin-bottom: 6px;
       font-size: var(--fs-lg);
       font-weight: 500;
-      color: #555;
-      margin-bottom: 6px;
+      color: var(--muted);
     }
-
     .contact-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px 14px;
+      gap: 4px 10px;
       font-size: var(--fs-md);
       color: #444;
     }
-
-    .contact-row span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .contact-row a {
-      color: #1a5fb4;
-      text-decoration: none;
-    }
-
-    .dot {
-      width: 2.5px;
-      height: 2.5px;
-      border-radius: 50%;
-      background: #999;
-      display: inline-block;
-      align-self: center;
-    }
-
+    .contact-row span { overflow-wrap: anywhere; }
+    .contact-row a { color: var(--blue); text-decoration: none; }
     .body {
       display: grid;
-      grid-template-columns: 1fr 186px;
+      grid-template-columns: minmax(0, 1fr) 186px;
       gap: 20px;
+      align-items: start;
     }
-
-    section {
-      margin-bottom: 16px;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
-    }
-
+    section { margin: 0 0 15px; }
+    section:last-child { margin-bottom: 0; }
     .sec-title {
-      font-size: var(--fs-lg);
-      font-weight: 600;
-      letter-spacing: 1.6px;
-      text-transform: uppercase;
-      color: #888;
-      border-bottom: 0.5px solid #ddd;
+      margin: 0 0 8px;
       padding-bottom: 3px;
-      margin-bottom: 8px;
-    }
-
-    .summary p {
-      font-size: var(--fs-md);
-      line-height: 1.55;
-      color: #2a2a2a;
-    }
-
-    .job {
-      margin-bottom: 11px;
-    }
-
-    .job:last-child {
-      margin-bottom: 0;
-    }
-
-    .job-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .job-title {
+      border-bottom: .5px solid var(--line);
+      color: #777;
       font-size: var(--fs-lg);
-      font-weight: 600;
-      color: #111;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
     }
-
-    .job-date {
-      font-size: var(--fs-md);
-      color: #888;
-      white-space: nowrap;
-      margin-left: 6px;
-      padding-top: 1px;
-    }
-
-    .job-company {
-      font-size: var(--fs-md);
-      color: #555;
-      margin-bottom: 4px;
-    }
-
+    .summary p { margin: 0; font-size: var(--fs-md); line-height: 1.55; color: #2a2a2a; }
+    .job { margin-bottom: 11px; break-inside: avoid; page-break-inside: avoid; }
+    .job:last-child { margin-bottom: 0; }
+    .job-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .job-title { font-size: var(--fs-lg); font-weight: 700; color: #111; }
+    .job-date { flex-shrink: 0; font-size: var(--fs-md); color: #777; white-space: nowrap; padding-top: 1px; }
+    .job-company { margin-bottom: 4px; font-size: var(--fs-md); color: var(--muted); }
     .badge {
       display: inline-block;
-      font-size: var(--fs-md);
-      font-weight: 500;
-      background: #eef3fb;
-      color: #1a5fb4;
-      border-radius: 3px;
-      padding: 0px 5px;
       margin-left: 4px;
+      padding: 0 5px;
+      border-radius: 3px;
+      background: #eef3fb;
+      color: var(--blue);
+      font-size: 10px;
+      font-weight: 500;
       vertical-align: middle;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
     }
-
-    ul.bullets {
-      list-style: none;
-      padding: 0;
-    }
-
+    ul.bullets { list-style: none; padding: 0; margin: 0; }
     ul.bullets li {
-      font-size: var(--fs-md);
-      line-height: 1.45;
-      color: #2a2a2a;
-      padding-left: 11px;
       position: relative;
       margin-bottom: 2.5px;
-    }
-
-    ul.bullets li::before {
-      content: '\25B8';
-      position: absolute;
-      left: 0;
-      color: #bbb;
-      font-size: 9px;
-      top: 1px;
-    }
-
-    .m {
-      font-weight: 600;
-      color: #0d0d0d;
-    }
-
-    .skill-group {
-      margin-bottom: 9px;
-    }
-
-    .skill-label {
+      padding-left: 11px;
+      color: #2a2a2a;
       font-size: var(--fs-md);
-      font-weight: 600;
-      letter-spacing: 0.9px;
-      text-transform: uppercase;
-      color: #aaa;
+      line-height: 1.45;
+    }
+    ul.bullets li::before {
+      content: "\2022";
+      position: absolute;
+      left: 1px;
+      top: 0;
+      color: #777;
+    }
+    .m { font-weight: 700; color: #0d0d0d; }
+    .skill-group { margin-bottom: 9px; }
+    .skill-label {
       margin-bottom: 4px;
+      color: #888;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      text-transform: uppercase;
     }
-
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3px;
-    }
-
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 3px; }
     .tag {
       display: inline-block;
-      font-size: var(--fs-md);
-      background: #f4f4f2;
-      color: #333;
-      border: 1px solid transparent;
+      padding: 1px 5px;
+      border: 1px solid #e6e6e6;
       border-radius: 3px;
-      padding: 1px 6px;
+      background: #f5f5f3;
+      color: #333;
+      font-size: 10px;
       line-height: 1.5;
-      -webkit-print-color-adjust: exact;
+      overflow-wrap: anywhere;
       print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
     }
-
-    .tag.accent {
-      background: #f0f6ff;
-      color: #1a5fb4;
-      border-color: #c8dff1;
-    }
-
-    .edu-name {
-      font-size: var(--fs-lg);
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 1px;
-    }
-
-    .edu-sub {
-      font-size: var(--fs-md);
-      color: #555;
-      margin-bottom: 3px;
-    }
-
+    .tag.accent { background: #f0f6ff; color: var(--blue); border-color: #c8dff1; }
+    .edu-name, .proj-name { margin-bottom: 1px; color: #111; font-size: var(--fs-lg); font-weight: 700; }
+    .edu-sub, .proj-desc { color: var(--muted); font-size: var(--fs-md); }
+    .edu-sub { margin-bottom: 3px; }
     .edu-gpa {
       display: inline-block;
-      font-size: var(--fs-md);
-      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 3px;
       background: #f0faf4;
       color: #1b7a45;
-      border-radius: 3px;
-      padding: 1px 6px;
-    }
-
-    .project {
-      margin-bottom: 7px;
-    }
-
-    .project:last-child {
-      margin-bottom: 0;
-    }
-
-    .proj-name {
-      font-size: var(--fs-lg);
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 1px;
-    }
-
-    .proj-desc {
       font-size: var(--fs-md);
-      color: #555;
-      line-height: 1.4;
+      font-weight: 700;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
     }
+    .project { margin-bottom: 7px; break-inside: avoid; page-break-inside: avoid; }
+    .project:last-child { margin-bottom: 0; }
+    .proj-desc { line-height: 1.4; }
 
-    .cert-item {
-      font-size: var(--fs-md);
-      color: #444;
-      margin-bottom: 3px;
-      padding-left: 10px;
-      position: relative;
-    }
-
-    .cert-item::before {
-      content: '\25B8';
-      position: absolute;
-      left: 0;
-      color: #ccc;
-      font-size: 8px;
-      top: 2px;
+    @media (max-width: 680px) {
+      .page { margin: 0 auto; padding: 22px 18px; }
+      .body { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { display: contents; }
+      .header h1 { font-size: 24px; }
+      .job-top { gap: 5px; }
+      .job-date { white-space: normal; text-align: right; }
     }
 
     @media print {
-      body {
-        background: #fff;
-      }
-
-      .tag,
-      .tag.accent {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        border-color: #999;
-        background-clip: padding-box;
-      }
-
+      @page { size: A4; margin: 10mm; }
+      body { background: #fff; font-size: 10pt; }
       .page {
-        width: 210mm;
-        min-height: 297mm;
-        max-height: 297mm;
+        width: auto;
+        min-height: 0;
+        max-height: none;
         margin: 0;
-        padding: 12mm 13mm 10mm;
+        padding: 0;
         box-shadow: none;
       }
-
-      @page {
-        size: A4;
-        margin: 0;
+      .body { grid-template-columns: minmax(0, 1fr) 175px; gap: 16px; }
+      a { color: inherit !important; text-decoration: none; }
+      .header, section, .job, .project { break-inside: avoid; }
+      .tag, .tag.accent, .badge, .edu-gpa {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
       }
     }
   </style>
 </head>
-
 <body>
-  <div class="page">
-
-    <div class="header">
+  <main class="page">
+    <header class="header">
       <h1>Rahul Wadhwa</h1>
-      <div class="title-tag">Senior Full Stack Engineer &nbsp;&middot;&nbsp; React &middot; Spring Boot &middot;
-        Microservices &middot; GenAI & LLM Integration</div>
+      <div class="title-tag">Senior Full Stack Engineer &nbsp;&middot;&nbsp; React &middot; Java &middot; Spring Boot &middot; Cloud &amp; LLM/RAG Integration</div>
       <div class="contact-row">
         <span>Faridabad, Haryana</span>
-        <span class="dot"></span>
         <span>+91-99538-06038</span>
-        <span class="dot"></span>
         <span><a href="mailto:rahulwadhwa238@gmail.com">rahulwadhwa238@gmail.com</a></span>
-        <span class="dot"></span>
         <span><a href="https://linkedin.com/in/rahulwadhwa238">linkedin.com/in/rahulwadhwa238</a></span>
-        <span class="dot"></span>
         <span><a href="https://github.com/rahulwadhwa238">github.com/rahulwadhwa238</a></span>
       </div>
-    </div>
+    </header>
 
     <div class="body">
-
       <div class="main">
-
         <section class="summary">
-          <div class="sec-title">Profile</div>
-          <p>Senior Full Stack Engineer with <strong>6+ years</strong> in delivering scalable enterprise software and platforms using <strong>React.js, Java, and Spring Boot microservices leveraged by Spring AI & MCP integration</strong>. Led end-to-end delivery of digital banking modules at EY serving <strong>30K+ daily users</strong>, with ownership across API gateway security, biometric authentication, and CI/CD pipelines. Proven track record improving onboarding conversion, compressing release cycles, and mentoring engineering teams.</p>
+          <h2 class="sec-title">Profile</h2>
+          <p>Senior Full Stack Engineer with <strong>6+ years</strong> of experience delivering enterprise applications using <strong>React.js, Java, and Spring Boot</strong>. Experienced in digital banking, secure API integration, cloud-based application operations, and backend development. Currently working on AWS EC2 deployments and Python-based LLM/RAG integrations, alongside scalable Spring Boot services.</p>
         </section>
 
         <section>
-          <div class="sec-title">Experience</div>
+          <h2 class="sec-title">Experience</h2>
 
-          <div class="job">
+          <article class="job">
+            <div class="job-top">
+              <div class="job-title">Senior Full Stack Engineer</div>
+              <div class="job-date">Jul 2026 – Present</div>
+            </div>
+            <div class="job-company">Innodata <span class="badge">Cloud · Backend · AI</span></div>
+            <ul class="bullets">
+              <li>Develop and Maintain application, deployments and operational troubleshooting on <span class="m">AWS EC2</span> instances, using secure SCP/SSH connections.</li>
+              <li>Work on <span class="m">Python-based LLM and RAG integrations</span> for document processing, contextual retrieval, and AI-powered application workflows.</li>
+              <li>Enhance backend services using <span class="m">Java and Spring Boot</span>, with a focus on scalable distributed architecture and message broker integration.</li>
+              <li>Monitor application health and deployment status, troubleshoot runtime issues, and support operational reliability across application environments.</li>
+            </ul>
+          </article>
+
+          <article class="job">
             <div class="job-top">
               <div class="job-title">Senior Consultant – Technology Consulting</div>
-              <div class="job-date">Dec 2022 – Present</div>
+              <div class="job-date">Dec 2022 – Jun 2026</div>
             </div>
-            <div class="job-company">Ernst &amp; Young (EY), Gurugram <span class="badge">Fintech &middot;
-                Enterprise</span></div>
+            <div class="job-company">Ernst &amp; Young (EY), Gurugram <span class="badge">Fintech · Enterprise</span></div>
             <ul class="bullets">
-              <li>Engineered <span class="m">3 core digital banking modules</span> (Savings account, Transaction, Passbook) with React.js + Spring Boot microservices, serving <span class="m">30K+ daily active users</span>.</li>
-              <li>Integrated face &amp; biometric authentication, reducing onboarding drop-off by <span
-                  class="m">12%</span> and manual KYC time by <span class="m">~40%</span>.</li>
-              <li>Hardened API gateway with <strong>Kong, Nginx &amp; Spring Security</strong> (JWT + OAuth 2.0) —
-                boosted conversion by <span class="m">5%</span>, zero post-deployment security incidents.</li>
-              <li>Leveraged AI-assisted development tools (including <strong>Claude Code, Github Copilot</strong>) for PR reviews, test case generation, code analysis increasing development efficiency by <span class="m">30%</span> and cutting post-release bug by <span class="m">25%</span>.</li>
+              <li>Engineered <span class="m">3 core digital banking modules</span> (savings account, transactions, and passbook) using React.js and Spring Boot microservices, serving <span class="m">30K+ daily active users</span>.</li>
+              <li>Integrated face and biometric authentication, reducing onboarding drop-off by <span class="m">12%</span> and manual KYC time by <span class="m">~40%</span>.</li>
+              <li>Strengthened API gateway security using <strong>Kong, Nginx, and Spring Security</strong> with JWT and OAuth 2.0; contributed to a <span class="m">5% conversion improvement</span>.</li>
+              <li>Used AI-assisted development tools, including Claude Code and GitHub Copilot, for code analysis, pull-request reviews, and test generation; reported improvements in development efficiency and post-release defect rates.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="job">
+          <article class="job">
             <div class="job-top">
               <div class="job-title">Software Engineer</div>
               <div class="job-date">Mar 2021 – Nov 2022</div>
             </div>
-            <div class="job-company">TechAhead Corp, Noida <span class="badge">Product &middot; Services</span></div>
+            <div class="job-company">TechAhead Corp, Noida <span class="badge">Product · Services</span></div>
             <ul class="bullets">
-              <li>Shipped <span class="m">5 production-grade React applications</span> integrating & developing <span class="m">100+ REST
-                  APIs with Java Spring Boot, AWS, Docker & Kubernetes.</span></li>
-              <li>Refactored component architecture with Redux, React routers, React memo, lazy loading &amp; code-splitting — page load <span
-                  class="m">down 35%</span>, Lighthouse score 62 &rarr; <span class="m">89</span>.</li>
-              <li>Led weekly code reviews for a 6-person team; linting standards and PR checklists cut cycle time by
-                <span class="m">20%</span>.</li>
+              <li>Delivered <span class="m">5 production React applications</span>, integrating REST APIs with Java/Spring Boot services and using AWS, Docker, and Kubernetes across projects.</li>
+              <li>Optimized component architecture using Redux, React Router, memoization, lazy loading, and code splitting; reduced page-load time by <span class="m">35%</span> and improved Lighthouse score from 62 to <span class="m">89</span>.</li>
+              <li>Led weekly code reviews for a six-person team; introduced linting standards and pull-request checklists that contributed to a <span class="m">20% reduction in cycle time</span>.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="job">
+          <article class="job">
             <div class="job-top">
               <div class="job-title">Software Engineer</div>
               <div class="job-date">Jan 2020 – Feb 2021</div>
             </div>
-            <div class="job-company">Grazitti Interactive, Panchkula <span class="badge">SaaS &middot; Enterprise</span>
-            </div>
+            <div class="job-company">Grazitti Interactive, Panchkula <span class="badge">SaaS · Enterprise</span></div>
             <ul class="bullets">
-              <li>Delivered customer-facing web application using <span class="m">Spring Boot + React Native</span> features across <span class="m">4 major releases</span> on
-                schedule for enterprise SaaS clients.</li>
-              <li>Used Mixpanel &amp; Kibana to surface application bottlenecks — drove 3 product fixes, reduced support ticket
-                volume by <span class="m">22%</span>.</li>
+              <li>Delivered customer-facing application features using Spring Boot and React Native across <span class="m">4 major releases</span> for enterprise SaaS clients.</li>
+              <li>Used Mixpanel and Kibana to identify application bottlenecks and support three product fixes associated with a <span class="m">22% reduction in support tickets</span>.</li>
             </ul>
-          </div>
-
+          </article>
         </section>
 
-              <section>
-                <div class="sec-title">Key Projects</div>
-              
-                <div class="project">
-                  <div class="proj-name">Airtel Payments Bank</div>
-                  <div class="proj-desc">Digital banking — SBA, passbook &amp; Re-KYC. React + Spring Boot. 30K+ DAU.</div>
-                </div>
-              
-                <div class="project">
-                  <div class="proj-name">HANY</div>
-                  <div class="proj-desc">On-demand platform — real-time booking, payments &amp; tracking.</div>
-                </div>
-              
-                <div class="project">
-                  <div class="proj-name">Aquatherm FieldPro</div>
-                  <div class="proj-desc">Offline-first React Native app; async timers &amp; push notifications.</div>
-                </div>
-              
-                <div class="project">
-                  <div class="proj-name">CatchAll</div>
-                  <div class="proj-desc">Social discovery — React Native + Google Places API.</div>
-                </div>
-              </section>
-
-
+        <section>
+          <h2 class="sec-title">Key Projects</h2>
+          <article class="project">
+            <div class="proj-name">Airtel Payments Bank</div>
+            <div class="proj-desc">Digital banking — savings account, passbook, and re-KYC workflows. React.js and Spring Boot; 30K+ DAU.</div>
+          </article>
+          <article class="project">
+            <div class="proj-name">HANY</div>
+            <div class="proj-desc">On-demand platform featuring real-time booking, payments, and tracking.</div>
+          </article>
+          <article class="project">
+            <div class="proj-name">Aquatherm FieldPro</div>
+            <div class="proj-desc">Offline-first React Native application with asynchronous timers and push notifications.</div>
+          </article>
+          <article class="project">
+            <div class="proj-name">CatchAll</div>
+            <div class="proj-desc">Social discovery application built with React Native and Google Places API.</div>
+          </article>
+        </section>
       </div>
 
-      <div class="sidebar">
-
+      <aside class="sidebar">
         <section>
-          <div class="sec-title">Skills</div>
-
+          <h2 class="sec-title">Skills</h2>
           <div class="skill-group">
             <div class="skill-label">Frontend</div>
             <div class="skill-tags">
               <span class="tag accent">React.js</span>
               <span class="tag accent">Next.js</span>
               <span class="tag accent">React Native</span>
-              <span class="tag accent">Android/iOS App Development</span>
               <span class="tag accent">Redux</span>
               <span class="tag accent">TypeScript</span>
               <span class="tag accent">JavaScript</span>
-              <span class="tag accent">Tailwind</span>
+              <span class="tag accent">Tailwind CSS</span>
             </div>
           </div>
-
           <div class="skill-group">
             <div class="skill-label">Backend</div>
             <div class="skill-tags">
-              <span class="tag accent">Spring Boot</span>
-              <span class="tag accent">Spring Modulith</span>
-              <span class="tag accent">Spring AI</span>
               <span class="tag accent">Java</span>
-              <span class="tag accent">Kafka</span>
-              <span class="tag accent">Event-driven Microservices</span>
+              <span class="tag accent">Spring Boot</span>
+              <span class="tag accent">Spring Security</span>
               <span class="tag accent">JPA / Hibernate</span>
               <span class="tag accent">REST APIs</span>
+              <span class="tag accent">Spring AI</span>
+              <span class="tag accent">Kafka</span>
+              <span class="tag accent">Microservices</span>
             </div>
           </div>
-
           <div class="skill-group">
             <div class="skill-label">Cloud &amp; DevOps</div>
             <div class="skill-tags">
+              <span class="tag accent">AWS EC2</span>
               <span class="tag accent">AWS</span>
               <span class="tag accent">Docker</span>
               <span class="tag accent">Jenkins</span>
@@ -479,38 +329,38 @@
               <span class="tag accent">Kong</span>
               <span class="tag accent">Nginx</span>
               <span class="tag accent">Kubernetes</span>
+              <span class="tag accent">Linux / SSH / SCP</span>
             </div>
           </div>
-
           <div class="skill-group">
-            <div class="skill-label">Databases</div>
+            <div class="skill-label">Data</div>
             <div class="skill-tags">
               <span class="tag accent">MySQL</span>
               <span class="tag accent">Oracle SQL</span>
-              <span class="tag accent">Mongo DB</span>
+              <span class="tag accent">MongoDB</span>
             </div>
           </div>
-
           <div class="skill-group">
             <div class="skill-label">AI &amp; Tooling</div>
             <div class="skill-tags">
-              <span class="tag accent">Rag & MCP Setup with Model Integration</span>
-              <span class="tag accent">Agentic and Prompt Eng. with Claude Code, Github Copilot</span>
+              <span class="tag accent">Python</span>
+              <span class="tag accent">LLM Integration</span>
+              <span class="tag accent">RAG</span>
+              <span class="tag accent">MCP</span>
+              <span class="tag accent">GitHub Copilot</span>
+              <span class="tag accent">Claude Code</span>
             </div>
           </div>
         </section>
 
-  <section>
-    <div class="sec-title">Education</div>
-    <div class="edu-name">B.Tech — Computer Science</div>
-    <div class="edu-sub">Lingaya's Vidyapeeth, Faridabad<br>2016 – 2020</div>
-    <span class="edu-gpa">GPA 8.5 / 10</span>
-  </section>
-
-      </div>
+        <section>
+          <h2 class="sec-title">Education</h2>
+          <div class="edu-name">B.Tech — Computer Science</div>
+          <div class="edu-sub">Lingaya's Vidyapeeth, Faridabad<br>2016 – 2020</div>
+          <span class="edu-gpa">GPA 8.5 / 10</span>
+        </section>
+      </aside>
     </div>
-
-  </div>
+  </main>
 </body>
-
 </html>
